@@ -1,0 +1,24 @@
+html,
+body {
+  font-family: "Fira Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  letter-spacing: 0.5px;
+}
+
+section {
+  height: auto;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+h1 {
+  color: rgb(78, 16, 16);
+  font-size: 5rem;
+  width: 100%;
+}
+
+a:hover {
+  text-decoration: none;
+}

@@ -1,0 +1,72 @@
+.quit-now {
+  padding-top: 3rem;
+  height: auto;
+  background-color: rgb(235, 222, 222);
+  width: 100%;
+}
+
+.quit-nowText {
+  margin-top: 15rem;
+}
+
+.quit-nowTitle {
+  padding-top: 2rem;
+  /* margin-left: 5rem; */
+  margin-bottom: 10rem;
+  /* width: 20rem; */
+}
+
+.homeContainer {
+  margin: auto;
+  display: flex;
+  position: relative;
+
+  width: 90%;
+}
+.homeVape {
+  max-width: 20rem;
+  margin-top: 5rem;
+  border: none;
+  height: max-content;
+}
+.homeTop {
+  display: flex;
+}
+@media (min-width: 700.05px) and (max-width: 1000px) {
+  .homeContainer {
+    display: block;
+  }
+  .quit-nowText {
+    margin: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .quit-nowTitle {
+    /* margin-left: 5rem; */
+    margin-bottom: 0;
+    /* width: 20rem; */
+    margin-top: 0;
+    font-size: 4rem;
+  }
+  .homeContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .homeVape {
+    width: auto;
+    margin-top: 0;
+    max-height: 100%;
+  }
+  .quit-nowText {
+    margin-top: 0;
+  }
+  /* .quit-now {
+    height: 100vh;
+  }
+} */
+  .homeTop {
+    display: flex;
+    flex-direction: column;
+  }
+}

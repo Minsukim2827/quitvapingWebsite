@@ -1,0 +1,69 @@
+.success-stories {
+  background-color: rgb(224, 199, 160);
+  height: auto;
+  width: 100%;
+}
+
+.storyGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 7 columns with equal width */
+  gap: 1rem;
+  color: rgb(224, 199, 160);
+  justify-content: center;
+  /* width: 100%; */
+}
+/* Style the buttons that are used to open and close the accordion panel */
+
+.storyPicture {
+  width: 10rem;
+  border-radius: 50%;
+}
+
+.storyPanel {
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  width: 25vw;
+  border-style: solid;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgb(78, 16, 16);
+}
+
+.successTitle {
+  text-align: center;
+  color: rgb(78, 16, 16);
+}
+.successContainer {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.storyTitle {
+  font-size: 2rem;
+}
+@media (min-width: 700.05px) and (max-width: 1000px) {
+  .storyGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .storyPanel {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .storyGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .storyPanel {
+    width: 80%;
+  }
+  .successContainer {
+    padding-bottom: 1rem;
+    justify-content: center;
+  }
+}
