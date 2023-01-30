@@ -1,0 +1,54 @@
+//COLOR PALLETE
+
+$light-purple: rgb(235, 222, 222);
+$dark-brown: rgb(78, 16, 16);
+$light-yellow: rgb(224, 199, 160);
+$almond: rgb(255, 235, 205);
+$light-purpleST: rgba(235, 222, 222, 0.9);
+$light-green: rgb(231, 222, 199);
+
+//FUNCTIONS
+
+@mixin sectionFormat($bgColor) {
+    background-color: bgColor;
+    padding-top: 5rem;
+}
+
+@mixin flex($direction, $content) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;
+}
+
+@mixin centeredTitle {
+    text-align: center;
+    font-size: 4rem;
+}
+
+//MAIN BODY STYLES
+
+html,
+body {
+    font-family: "Fira Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    letter-spacing: 0.5px;
+}
+
+section {
+    height: auto;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    width: 100%;
+}
+
+h1 {
+    color: $dark-brown;
+    font-size: 5rem;
+    width: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+}

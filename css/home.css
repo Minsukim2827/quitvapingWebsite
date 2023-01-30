@@ -1,8 +1,32 @@
-.quit-now {
-  padding-top: 3rem;
+html,
+body {
+  font-family: "Fira Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  letter-spacing: 0.5px;
+}
+
+section {
   height: auto;
-  background-color: rgb(235, 222, 222);
+  padding-bottom: 2rem;
+  padding-top: 2rem;
   width: 100%;
+}
+
+h1 {
+  color: rgb(78, 16, 16);
+  font-size: 5rem;
+  width: 100%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.quit-now {
+  background-color: bgColor;
+  padding-top: 5rem;
 }
 
 .quit-nowText {
@@ -10,28 +34,29 @@
 }
 
 .quit-nowTitle {
-  padding-top: 2rem;
-  /* margin-left: 5rem; */
   margin-bottom: 10rem;
-  /* width: 20rem; */
 }
 
 .homeContainer {
   margin: auto;
   display: flex;
   position: relative;
-
   width: 90%;
 }
+
 .homeVape {
   max-width: 20rem;
   margin-top: 5rem;
   border: none;
+  height: -webkit-max-content;
+  height: -moz-max-content;
   height: max-content;
 }
+
 .homeTop {
   display: flex;
 }
+
 @media (min-width: 700.05px) and (max-width: 1000px) {
   .homeContainer {
     display: block;
@@ -40,33 +65,27 @@
     margin: 0;
   }
 }
-
 @media (max-width: 700px) {
   .quit-nowTitle {
-    /* margin-left: 5rem; */
-    margin-bottom: 0;
-    /* width: 20rem; */
-    margin-top: 0;
+    margin: 0;
     font-size: 4rem;
   }
   .homeContainer {
     display: flex;
     flex-direction: column;
+    justify-content: start;
   }
   .homeVape {
     width: auto;
-    margin-top: 0;
+    margin: 0;
     max-height: 100%;
   }
   .quit-nowText {
     margin-top: 0;
   }
-  /* .quit-now {
-    height: 100vh;
-  }
-} */
   .homeTop {
     display: flex;
     flex-direction: column;
+    justify-content: start;
   }
-}
+}/*# sourceMappingURL=home.css.map */

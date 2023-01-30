@@ -1,0 +1,23 @@
+@import "./style.scss";
+
+.support {
+    background-color: $light-purple;
+    padding-top: 5rem;
+}
+.supportTitle {
+    @include centeredTitle;
+}
+.supportText {
+    width: 60%;
+    margin: auto;
+}
+
+@media (max-width: 700px) {
+    .supportText {
+        width: 70%;
+        padding-bottom: 2rem;
+    }
+    .supportText p {
+        margin-bottom: 3rem;
+    }
+}

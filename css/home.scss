@@ -1,0 +1,60 @@
+@import "./style.scss";
+
+.quit-now {
+    @include sectionFormat($light-purple);
+}
+
+.quit-nowText {
+    margin-top: 15rem;
+}
+
+.quit-nowTitle {
+    margin-bottom: 10rem;
+}
+
+.homeContainer {
+    margin: auto;
+    display: flex;
+    position: relative;
+
+    width: 90%;
+}
+.homeVape {
+    max-width: 20rem;
+    margin-top: 5rem;
+    border: none;
+    height: max-content;
+}
+.homeTop {
+    display: flex;
+}
+@media (min-width: 700.05px) and (max-width: 1000px) {
+    .homeContainer {
+        display: block;
+    }
+    .quit-nowText {
+        margin: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .quit-nowTitle {
+        margin: 0;
+        font-size: 4rem;
+    }
+    .homeContainer {
+        @include flex(column, start);
+    }
+    .homeVape {
+        width: auto;
+        margin: 0;
+        max-height: 100%;
+    }
+    .quit-nowText {
+        margin-top: 0;
+    }
+
+    .homeTop {
+        @include flex(column, start);
+    }
+}

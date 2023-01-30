@@ -1,0 +1,25 @@
+@import "./style.scss";
+
+.risks {
+    padding-top: 5rem;
+    background-color: $almond;
+}
+
+.risksContainer {
+    height: auto;
+    align-items: center;
+    @include flex(column, space-between);
+}
+
+.risksImg {
+    width: 20rem;
+}
+.risksText {
+    width: 80%;
+}
+
+.risksTitle {
+    margin: 0;
+    color: $dark-brown;
+    text-align: center;
+}

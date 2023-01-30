@@ -1,26 +1,46 @@
+html,
+body {
+  font-family: "Fira Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  letter-spacing: 0.5px;
+}
+
+section {
+  height: auto;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  width: 100%;
+}
+
+h1 {
+  color: rgb(78, 16, 16);
+  font-size: 5rem;
+  width: 100%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .risks {
   padding-top: 5rem;
-
-  background-color: blanchedalmond;
-  background-repeat: no-repeat;
-  background-position: center center;
-
-  height: auto;
-
-  width: 100%;
+  background-color: rgb(255, 235, 205);
 }
 
 .risksContainer {
   height: auto;
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
 }
 
 .risksImg {
   width: 20rem;
 }
+
 .risksText {
   width: 80%;
 }
@@ -29,20 +49,4 @@
   margin: 0;
   color: rgb(78, 16, 16);
   text-align: center;
-}
-
-/* @media (max-width: 700px) {
-  .risksTitle {
-    margin-bottom: 0;
-    margin-top: 0rem;
-  }
-
-  .risks {
-    background-position: 50% -15%;
-    height: auto;
-  }
-
-  .risksContainer {
-    margin-top: 130%;
-  }
-} */
+}/*# sourceMappingURL=risks.css.map */
